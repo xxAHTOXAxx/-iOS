@@ -22,6 +22,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
        
     }
     
+    
     func setupTabBarViewControllers() {
         let first = FirstTabBarViewController()
         let firstIcon = UITabBarItem(title: "First", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
@@ -40,12 +41,16 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         let fourthIcon = UITabBarItem(title: "Fourth", image: UIImage(systemName: "camera.macro.circle"), selectedImage: UIImage(systemName: "camera.macro.circle"))
         fourth.tabBarItem = fourthIcon
         
+        
+        
         func tabBarController(_tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
             print("Будет выбран контроллер -\(viewController.title ?? "")")
-            return true
             
             let controllers = [first, second, third, fourth]
             self.setViewControllers(controllers, animated: true)
+            
+            return true
+         
         }
         
     }

@@ -8,5 +8,9 @@
 import UIKit
 
 class ThirdTabBarViewController: UITabBarController, UITabBarControllerDelegate {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .systemOrange
+    }
 }
