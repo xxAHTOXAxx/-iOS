@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		315060212A47659900BF81CC /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315060202A47659900BF81CC /* ViewControllerTwo.swift */; };
 		31E1E3B82A4091F400467E35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1E3B72A4091F400467E35 /* AppDelegate.swift */; };
 		31E1E3BA2A4091F400467E35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1E3B92A4091F400467E35 /* SceneDelegate.swift */; };
 		31E1E3BC2A4091F400467E35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1E3BB2A4091F400467E35 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		315060202A47659900BF81CC /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 		31E1E3B42A4091F400467E35 /* Навигация iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Навигация iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E1E3B72A4091F400467E35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31E1E3B92A4091F400467E35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				31E1E3B72A4091F400467E35 /* AppDelegate.swift */,
 				31E1E3B92A4091F400467E35 /* SceneDelegate.swift */,
 				31E1E3BB2A4091F400467E35 /* ViewController.swift */,
+				315060202A47659900BF81CC /* ViewControllerTwo.swift */,
 				31E1E3C02A4091F600467E35 /* Assets.xcassets */,
 				31E1E3C22A4091F600467E35 /* LaunchScreen.storyboard */,
 				31E1E3C52A4091F600467E35 /* Info.plist */,
@@ -165,6 +168,7 @@
 				31E1E3B82A4091F400467E35 /* AppDelegate.swift in Sources */,
 				31E1E3BA2A4091F400467E35 /* SceneDelegate.swift in Sources */,
 				31E1E3D62A40A99900467E35 /* FourthTabBarController.swift in Sources */,
+				315060212A47659900BF81CC /* ViewControllerTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
