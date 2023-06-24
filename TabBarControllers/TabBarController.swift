@@ -19,8 +19,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         tabBar.tintColor = .black
         tabBar.backgroundColor = .white
         
-        let controllers = [first, second, third, fourth]
-        self.setViewControllers(controllers, animated: true)
+       
     }
     
     func setupTabBarViewControllers() {
@@ -45,6 +44,8 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
             print("Будет выбран контроллер -\(viewController.title ?? "")")
             return true
             
+            let controllers = [first, second, third, fourth]
+            self.setViewControllers(controllers, animated: true)
         }
         
     }
