@@ -13,7 +13,6 @@ class ViewControllerTwo: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemMint
         title = "Класс 2"
-        view.backgroundColor = .systemMint
     }
 
 

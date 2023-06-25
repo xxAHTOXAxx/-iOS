@@ -34,6 +34,17 @@ class ViewController: UIViewController {
         return buttonLogin
     }()
     
+    private lazy var buttonLoginTwo = {
+        let buttonLogin = UIButton(type: .system)
+        buttonLogin.setTitle("Жми меня", for: .normal)
+        buttonLogin.setTitleColor(UIColor.black, for: .normal)
+        buttonLogin.backgroundColor = .systemGray
+        buttonLogin.layer.cornerRadius = 15
+        buttonLogin.layer.shadowColor = UIColor.black.cgColor
+        buttonLogin.translatesAutoresizingMaskIntoConstraints = false
+        buttonLogin.addTarget(self, action: #selector(buttonPressedTwo), for: .touchUpInside)
+        return buttonLogin
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +60,7 @@ class ViewController: UIViewController {
     private func setupHierarchy() {
         view.addSubview(textNamePage)
         view.addSubview(buttonLogin)
+        view.addSubview(buttonLoginTwo)
     }
     
     private func setupLayout() {
@@ -66,6 +78,11 @@ class ViewController: UIViewController {
             buttonLogin.leftAnchor.constraint (equalTo: view.leftAnchor, constant: width * 0.13),
             buttonLogin.rightAnchor.constraint (equalTo: view.rightAnchor, constant: -width * 0.13),
             buttonLogin.heightAnchor.constraint(equalToConstant: 41),
+            
+            buttonLoginTwo.topAnchor.constraint(equalTo: buttonLogin.bottomAnchor, constant: height * 0.10),
+            buttonLoginTwo.leftAnchor.constraint (equalTo: view.leftAnchor, constant: width * 0.13),
+            buttonLoginTwo.rightAnchor.constraint (equalTo: view.rightAnchor, constant: -width * 0.13),
+            buttonLoginTwo.heightAnchor.constraint(equalToConstant: 41),
         ])
     }
     
@@ -75,6 +92,16 @@ class ViewController: UIViewController {
             navigator.pushViewController(viewController, animated: true)
         }
         
+    }
+    
+    @objc func buttonPressedTwo() {
+        showAlert()
+        }
+        
+    func showAlert() {
+        let alert = UIAlertController(title: "Не верное имя", message: "Попробуй еще раз", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: { event in }))
+        self.present(alert, animated: true)
     }
     
 }
